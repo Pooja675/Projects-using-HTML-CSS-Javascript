@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list" >
+            <div class="logo"> <img src="img/logo1.png" alt="logo"></div> 
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="background firstsection">
+        <div id="home">
+            <div class="box-main">
+                <div class="firsthalf">
+                    <p class="name">Hello, I'm Pooja</p>
+                    <p class="profession">QA Analyst & <br> Frontend Developer</p>
+                </div>
+    
+                <div class="secondhalf">
+                    <img src="img/puja.jpg" alt="pooja">
+                </div>
+            </div>
+        </div>
+
+    </section>
+<!--- *********************About me*********************-->
+    <section class="background secondsection"> 
+        <div id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/Pooja22.jpg" alt="Pooja2">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me"> I have experience in Software Testing in automation testing, knowledge of generating test 
+                        scenarios, write test cases, collect test data and frontend development. Have also 
+                        completed PG Diploma in Advanced Computing from Hyderabad and also completed Selenium  
+                        Certification. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Frontend Development</li>
+                            <li><span>2019 - 2021</span><br>Automation testing using selenium webdriver </li>
+                            <li><span>2017 - 2018</span><br>QA Analyst at NCR Corporation India Pvt. Ltd.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2016 - 2017</span><br>PG Diploma in Advanced Computing from CDAC Hyderabad</li>
+                            <li><span>2012 - 2016</span><br>B.E. (Computer Engineering) from Savitribai Phule Pune University</li>
+                            <li><span>2011 - 2012</span><br>HSC from Kendriya Vidyalaya AFS Ojhar Nashik(CBSE) </li>
+                            <li><span>2009 - 2010</span><br>SSC from Kendriya Vidyalaya AFS Ojhar Nashik(CBSE)</li>
+                        </ul>
+                    </div>
+
+                    
+
+                </div>
+               
+            </div>
+        </div>
+
+    </section>
+    <!--******************************************Skills*******************************************************-->
+   <section class="background thirdsection">
+    <div id="skills">
+        <div class="container">
+            <div class="skill-col-1">
+                <h1 class="sub-title">Skills</h1>
+                <div class="tab-titles">
+                    <p class="skill-links active-skilllink" onclick="openskilltab('analyst')">QA Analyst</p>
+                    <p class="skill-links" onclick="openskilltab('frontend')">Frontend Development</p>
+                </div>
+                <div class="skill-contents active-skilltab" id="analyst">
+                    <ul>
+                        <li>Automation Testing</li>
+                        <li>Java</li>
+                        <li>Selenium Webdriver</li>
+                        <li>TestNg</li>
+                        <li>Maven</li>
+                        <li>Cucumber Bdd</li>
+                        <li>API Testing</li>
+                        <li>Manual Testing</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-contents " id="frontend">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript </li>
+                        <li>React</li>
+                        
+                    </ul>
+                </div>
+    
+            </div>
+                
+                <!-- <div class="skill-col-2">
+                    <img src="img/frontend.jpg" alt="front-end-developer">
+                </div> -->
+            
+         </div>
+    </div>
+    
+    </section>
+
+   <!-----------------------------------Project------------------------------------>
+   <section class="background forthsection">
+    <div id="project">
+        <div class="pro-col-1">
+            <h1 class="sub-title">Project</h1>
+            <div class="tab-titles">
+                <p class="pro-links active-prolink" onclick="openprotab('project1')">Project 1</p>
+                <p class="pro-links" onclick="openprotab('project2')">Project 2</p>
+                <p class="pro-links" onclick="openprotab('project3')">Project 3</p>
+                
+            </div>
+
+            <div class="pro-contents active-protab" id="project1">
+                <ul>
+                    <li><span>Project name:</span><br>CRT Memory Leak Testing with and without controls of ATM Software</li>
+                    <li><span>Technologies / Tools / Platform:</span><br>Jira, Performance Monitor, Debug Diagnostic tool </li>
+                    <li><span>Responsibilities:</span><br>In the project, performed extensive transactions testing and collected logs for further analysis.
+                    <br>Executed test scenarios to check the functionality regarding dispensing cash when the card reader becomes unavailable with 
+                    <br>customer tampering before withdrawal can issue any command.
+                    <br>Reviewed test plans & consulted for continuous improvement in quality & efficiency for deliverables.
+                    <br>Used jira to manage testing and track result of each build and report defects detected.
+                </li>
+                </ul>
+            </div>
+
+            <div class="pro-contents " id="project2">
+                <ul>
+                    <li><span>Project name:</span><br>Channel Services Components of ATM Software</li>
+                    <li><span>Technologies / Tools / Platform:</span><br>NUnit Testing, VisualStudio2010, C# </li>
+                    <li><span>Responsibilities:</span><br>Performed Nunit testing on channel services components such as DataRec, Data Translator, .NET Configuration Update Manager.
+                    <br>Created, maintained and executed test cases and test scripts. Participated in requirements, design and review meetings, obtaining  
+                    <br>clarification from project team as needed.
+                    <br>Created and maintained meaningful defect metrics to assess current status and overall testing progress.
+                    
+                </li>
+                </ul>
+            </div>
+
+            <div class="pro-contents " id="project3">
+                <ul>
+                    <li><span>Project name:</span><br>Real-time analog clock using HTML, CSS, and JavaScript.</li>
+                    <li><span>Technologies / Tools / Platform:</span><br>HTML, CSS, JavaScript</li>
+                    <li><span>Responsibilities:</span><br>I have created three files (HTML file, a CSS file, and JavaScript File) and an image of the clock used in the background, and on top of 
+                        <br>that, created an hour, minute, and second hand (using HTML and CSS). 
+                        <br>These hands would rotate as per the system time and used the predefined Date function of JavaScript to calculate the degree of rotations of each hand.
+                    
+                </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+   </section>
+
+   <!-------------------------------------------Contact------------------------------------------>
+
+   <section class="background fifthsection">
+
+    <div id="contact">
+        
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>poojasinha675@gmail.com</p>
+                <p>+91-9182151866</p>
+                <div class="download">
+                    <a href="download/Pooja_Resume.pdf" download="cv">
+                        <button type="button">Download CV</button>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
